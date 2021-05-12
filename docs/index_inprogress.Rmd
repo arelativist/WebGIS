@@ -35,8 +35,8 @@ options(knitr.duplicate.label = TRUE)
 
 .btn-default {
     color: #2ecc71;
-    background-color: #eb34e8;
-    border-color: #38f2ef;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 </style>
 
@@ -44,7 +44,7 @@ options(knitr.duplicate.label = TRUE)
 
 # Introduction
 
-This page will serve as both a repository for my work in WebGIS 2021, 
+This page will serve as both a repository for my WebGIS 2021 portfolio, and a space to reflect 
 
 
 Here is a link to another file:
@@ -55,7 +55,7 @@ knitr::include_url("http://www.google.com")
 
 
 
-# Map 1: My First Web App {.tabset .tabset-pills}
+# Map Production: Michigan Aurora Borealis Photography Sites {.tabset .tabset-pills}
 
 <!-- Look at the source code for the final project template, you'll notice the text: -->
 <!-- {.tabset .tabset-pills} -->
@@ -65,536 +65,88 @@ knitr::include_url("http://www.google.com")
 
 
 
-## `c()`
+## `The Map`
+
+This map is available here: 
+
+https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271
 
 
-The function `c()` *combines* or *concatenates* its arguments into a vector (a 1-dimensional data structure consisting of 1 or more elements).
 
-- All of the elements must be of the same *type*.
-  - I can't combine character and numeric types in the same call to `c()`
+## `input data and methodology`
 
-Here's two examples using numeric and character data types:
-
-```{r}
-# Create a vector of numbers:
-num_vec  = c(1, 4, 8, 9, 13)
-
-# Create a vector of characters:
-char_vec = c("a", "fish", "data is cool")
-```
-
-I can show the contents of a vector by typing the name of the vector, or using the `print()` function.
-
-```{r}
-# Typing the name of the vector into the console prints the contents
-num_vec
-
-# The print() function accomplishes the same task:
-print(char_vec)
-```
-
-
-## `data.frame()`
-
-A data frame contains columns and rows, where each column contains the same number of items. I can create a data frame using the function `data.frame()`
-
-- Rows must be of the same length
-- Data stored can be factor, numeric, or character type
-- Columns must be of the same data type
-
-The data frame can be defined by defining each column, as shown below:
+Aurora data from analysis
   
 
 
-```{r}
-## build a data frame from scratch
-
-dat_1 <- data.frame(
-  letters = c("f", "t", "w"),
-  numbers_1 = c(42,6, 31415956))
-
-## I can print the contents by typing the name of the data frame
-
-dat_1
-
-```
-
-Some ways to subset a data frame:
-
-- If I know the name of a column, I can use `$`
 
 
-```{r}
-## Here I will use subset a column by name
+# Map Production: Numerical Data Exploration  {.tabset .tabset-pills}
 
-dat_1$letters
+## Intro
 
-```
-
-- You can also subset a data frame, using `subset()` !
-
-```{r}
-## Creating a subset using subset()
-
-sub_1 <- subset(dat_1, letters == "f")
-
-sub_1
-
-```
-
-To access a particular location within a data frame, I can use square brackets!
-
-```{r}
-## access a location within a dataframe
-
-dat_1[3,2] ##Accesses location in the data frame at row 3, column 2
-
-```
-
-Don't forget that the Index starts at 1!!
+The intention of these to maps was to show how data can be improved upon
 
 
-## `matrix()`
+## Unedited Input
 
-A matrix is a two dimensional data structure that can be created using the function `matrix()`.
-
-A matrix has a defined dimension and must be comprised of a single data type.
-
-- a matrix may be created from a vector by applying a dimension
+https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
 
 
-```{r matrix()}
+## Edited Input
+https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
 
-## Create a matrix from scratch
-
-new_matrix <- matrix(1:18, nrow = 6, ncol = 3) 
-
-## the first argument is the data for the matrix
-## nrow and ncol define the dimensions, only one is required
-
-##display new matrix
-
-new_matrix
-
-```
-
-Square brackets can also be used on a matrix to access a specific location:
+## Second Edit
+.......
 
 
-```{r square brax}
+# Michigan Brown Trout: a Tool Analysis {.tabset .tabset-pills}
 
-## access the value at row four and column three of the new matrix
+See the final project description for a list of the required functions.
 
-new_matrix[4,3]
+## `map`
+
+https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=56938e49636e4e90b8904a485eed2583
+
+
+
+## `discussion`
+
+The purpose of this map was to test different tools of ArcGIS Online.
+
+
+# Map Production: Open Street Map and Humanitarian Open Street Map 
+
+## `OSM Profile`
+
+Here is my OSM Profile, where you can see some of my contributions:
+
+https://www.openstreetmap.org/user/arelativist
+
+
+
+# HTML Resume {.tabset .tabset-pills}
+
+## `Resume 2021`
+
+```{r, echo=FALSE}
+knitr::include_app("MMarasco_Resume2021.html")
 
 ```
 
 
 
-## `length()`
+## `link to resume page`
 
-The function `length()` either retrieves or sets the length of an object. 
+link
 
-```{r}
-## Use length() to retrieve a length
+## `info`
 
-vect <- c(1:18)
-length(vect)
-
-```
-
-```{r}
-## Use length() to set the length
-## Establish and print vector
-
-vect <- c(1:18)
-vect
-
-## set the length
-
-
-length(vect) <- 9
-vect
-
-```
-
-## `nrow()`
-
-The function `nrow()` either sets or retrieves the number of rows in a matrix:
-```{r}
-
-##nrow() can set the rows:
-matrix <- matrix(18:35, nrow = 6)
-matrix
-
-##and nrow() can retrieve the rows:
-
-nrow(matrix)
-
-```
-
-
-
-## `ncol()`
-The function `ncol()` either sets or retrieves the number of columns in a matrix:
-```{r}
-## ncol() can set the columns:
-
-matrix <- matrix(18:35, ncol = 6)
-matrix
-
-## and ncol() can retrieve the columns:
-
-ncol(matrix)
-
-```
-
-
-
-## `dim()`
-
-To create a matrix from a vector, use the function `dim()`:
-
-
-```{r}
-## To create a matrix from a vector, first establish the vector:
-
-vect <- c(1:18)
-
-## Then apply dimension using dim()
-
-dim(vect) <- c(3,6)
-
-vect
-
-```
-
-Similar to `length()`, `dim()` can also be used to retrieve the dimensions of something:
-
-```{r}
-matrix <- matrix(18:35, ncol = 6)
-
-dim(matrix)
-
-```
-
-
-# Functions 2: Numerical Data Exploration  {.tabset .tabset-pills}
-
-## `summary()`
-
-To get a brief synopsis of an object, I can use the function `summary()`:
-
-```{r}
-## load the palmerpenguins package
-require(palmerpenguins)
-
-## demonstrate
-summary(penguins)
-```
-
-This can be very useful in an initial exploration of your data
-
-
-## `mean()`
-
-The `mean()` function can be used to retrieve the mean of a set of data:
-
-```{r}
-## load the palmerpenguins package
-require(palmerpenguins)
-
-
-##demonstrate
-## the argument na.rm removes NA values in this calculation
-
-mean(penguins$flipper_length_mm, na.rm = TRUE)
-
-
-```
-
-
-
-## `sd()`
-
-The `sd()` function calculates standard deviation:
-
-```{r}
-## load the palmerpenguins package
-require(palmerpenguins)
-
-## demonstrate
-## the argument na.rm removes NA values in this calculation
-
-sd(penguins$flipper_length_mm, na.rm = TRUE)
-```
+This HTML Resume was created as a challenge to implement basic HTML skills on a document from scratch.
 
  
 
 
-# Functions 3: Graphical Data Exploration {.tabset .tabset-pills}
-
-See the final project description for a list of the required functions.
-
-## `plot()`
-
-
-I can use `plot()` to create scatterplots! 
-
-
-```{r scatterplot_1, fig.asp = 0.7}
-
-## load the penguins package:
-require(palmerpenguins)
-
-## using formula notation:
-## I can use the pch argument to change the symbol
-
-plot(
-  bill_length_mm ~ body_mass_g,
-  data = penguins,
-  pch = 6)
-
-
-```
-
-## `boxplot()`
-
-The function `boxplot()` can be used to create boxplots!
-
-- This can be used to plot both conditional and simple boxplots:
-
-```{r}
-
-## Load the palmerpenguins package:
-require(palmerpenguins)
-
-## a single boxplot:
-boxplot(penguins$flipper_length_mm, 
-        main = "Flipper Length (mm)",
-        ylab = "length")  ## here the main and ylab arguments are providing labels
-
-## A conditional boxplot :
-boxplot(flipper_length_mm ~ species, data = penguins, 
-        ## the first argument tells it which data to plot and which 
-        ## to condition it by, using the ~ (tilda)
-        main = "Flipper Length by Species",
-        ## again, labels
-        ylab = "Flipper Length (mm)")
-
-```
-
-
-
-## `hist()`
-
-I can create a histogram using the function `hist()`!
-
-```{r}
-## import the penguin data:
-require(palmerpenguins)
-
-## create a histogram
-hist(penguins$flipper_length_mm,
-     main = "Histogram of Flipper Length",
-     xlab = "Flipper Length (mm)")
-
-```
-
-`hist` has many arguments, but one important one is `breaks =`:
-
-- set the argument `breaks` to alter the number of bins in your histogram:
-
-
-```{r}
-
-## make a histogram with 40 bins:
-
-hist(penguins$flipper_length_mm,
-     breaks = 40, ## here I specify the breaks
-     main = "Histogram of Flipper Length",
-     xlab = "Flipper Length (mm)")
-
-```
-
-## `par() and mfrow=`
-
-The function `par()` with the argument `mfrow=` can be used to plot more than one graph at a time!
-
-- This can be useful to combine more than one graph
-- `mfrow=` uses a vector:
-
-```{r fig.asp = 1}
-## this is how to implement the par() function:
-
-par(mfrow = c(1,2)) ##mfrow describes the layout. Here, 1X2
-## The graphs following par() will be plotted together
-boxplot(flipper_length_mm ~ species, data = penguins, 
-        main = "Flipper Length by Species",
-        ylab = "Flipper Length (mm)")
-hist(penguins$flipper_length_mm,
-     breaks = 40,
-     main = "Histogram of Flipper Length",
-     xlab = "Flipper Length (mm)")
-
-```
-
-
-
-
-# Functions 4: Distribution Functions {.tabset .tabset-pills}
-
-## `dnorm()`
-
-The function `dnorm()` can be used to calculate the probability density of a normal distribution!
-
-- For example:
-```{r}
-
-## The following will return the height of the curve of the normal distribution
-## at X = 12
-## for a normal distribution where the mean is 18 and the standard deviation is 6:
-
-dnorm(12, mean = 18, sd = 6)
-
-```
-
-
-## `pnorm()`
-
-The function `pnorm()` returns the cumulative density for a normal distribution! 
-
-- `pnorm()` gives me the value of the probability of observing `x` or *less*
-
-```{r}
-## What is the probability of observing a value less than 15 in a normal distribution with a mean of 18 and a standard deviation of 6
-
-pnorm(15, mean = 18, sd = 6)
-
-```
-
-In this case we return 30.85% probability!
-
-
-
-## `qnorm()`
-
-The function `qnorm()` returns the value at a quantile of a normal distribution!
-
-- `qnorm()` gives me the value at the specified percentile, `p`
-- percentile argument must be given as a decimal 
-
-
-```{r}
-## What is the value at the 31% percentile for a standard distribution with a mean of 18 and a standard deviation of 6?
-
-qnorm(0.31, mean = 18, sd = 6)
-
-```
-
-Here, we return something close to 15.
-
-## `dbinom()`
-
-Similar to `dnorm()`, the function `dbinom()` returns probability, but returns it for a binomial distribution. In a binomial distribution, we call it probability mass instead of density.
-
-- `dbinom()` will give us the probability of observing a value (x) in a binomial distribution:
-
-
-
-```{r dbinom}
-
-## what is the probability of observing 5 successes (x), in a binomial distribution with twenty trials (size) and a success rate of 25% (prob)
-
-dbinom(5, size = 20, prob = .25)
-
-```
-
-Here we get an answer close to 20%
-
-## `qbinom()`
-
-`qbinom()` is a function that give us the quantile of a binomial distribution
-
-- We can use `qbinom()` to return the value at a quantile of a binomial distribution:
-
-```{r qbinom}
-
-## what is the 20th quantile of a binomial distribution with a size of 20 and a probability of 25%?
-
-qbinom(.20, size = 20, prob = .25)
-
-```
-And the answer is 3.
-
-
-
-
-# Functions 5: Other Functions {.tabset .tabset-pills}
-
-## `subset()`
-
-The function `subset()` can be used to isolate data from a data frame.
-
-
-```{r}
-## import penguins data
-require(palmerpenguins)
-
-## summarize the data to look for something to subset:
-summary(penguins)
-
-## create a subset!
-dat_adelie <- subset(penguins, species == "Adelie")
-
-## test the subset
-head(dat_adelie)
-
-```
-
-Here we have subsetted the penguin data into just one species, Adelie.
-
-## `library() and require()`
-
-The `library()` and `require()` functions can be used to import pre-installed code and datasets that come with R. These are called packages. 
-
-- The first time you access a package, you should use `install.packages()` to bring it in to R
-- They can be used interchangeably but `require()` is necessary for use inside of a function
-
-
-```{r}
-## Using library() to load a package of code that we need:
-library(stats)
-
-## This is the package that we have been using for our distribution functions. Here we can see a description:
-packageDescription("stats")
-
-## another package that we have been relying heavily upon is the palmer penguins data package
-library(palmerpenguins)
-
-## this package has supplied us with our penguin data
-packageDescription("palmerpenguins")
-
-```
-
-
-## `read.csv()`
-
-The function `read.csv()` is used to import data from a local csv file:
-
-```{r read.csv}
-
-### Import data using read.csv function
-
-dat_delomys <- read.csv("data/delomys.csv")
-
-## Test the import
-summary(dat_delomys)
-
-```
-
-
-Using `summary()`, we can see that the data did indeed import.
 
 
 
@@ -606,20 +158,9 @@ Now that it is imported, we will preform a data analysis on the Delomys data.
 We will start with a numerical exploration:
 
 ### Summary of `dat_delomys`:
-```{r delomys summary, echo=FALSE}
 
-## Show a summary of the delomys data:
-summary(dat_delomys)
-```
 ### Shapiro Tests
-``` {r shapiro, echo = FALSE}
-## test the normality of body mass:
-shapiro.test(dat_delomys$body_mass)
 
-## test the normality of body length:
-shapiro.test(dat_delomys$body_length)
-
-```
 
 Since both of these return a p-value that is much lower than .05, we know that our variables are not normally distributed.
 
@@ -628,59 +169,23 @@ Since both of these return a p-value that is much lower than .05, we know that o
 
 ### Scatterplot
 
-```{r scatterDat, fig.asp = 1, echo = FALSE}
-## scatter plot of body length by body mass
-plot(dat_delomys$body_length, dat_delomys$body_mass, 
-     main = "Delomys Body Length and Body Mass", 
-     xlab = "Body Length", ylab = "Body Mass")
-```
+
 
 ### Histograms
-```{r massHist, echo = FALSE}
-## body mass histogram
 
-hist(dat_delomys$body_mass, breaks = 20,
-     main = "Histogram of Delomys Body Mass",
-     xlab = "Body Mass")
 
 ## body length histogram
 
-hist(dat_delomys$body_length, breaks = 20,
-     main = "Histogram of Delomy Body Length",
-     xlab = "Body Length")
 
-```
+
 
 
 ### Boxplots
-```{r, echo = FALSE, fig.asp=1}
+
 
 ## body mass conditioned on species
 
-boxplot(body_mass ~ binomial, 
-        data = dat_delomys, 
-        main = "Delomys Body Mass by Species", 
-        xlab = "Species", ylab = "Body Mass")
 
-## body mass conditioned on sex
-
-boxplot(body_mass ~ sex, 
-        data = dat_delomys, 
-        main = "Delomys Body Mass by Sex", 
-        xlab = "Sex", ylab = "Body Mass")
-
-## body mass conditioned on both
-
-boxplot(body_mass ~ sex*binomial, 
-        data = dat_delomys, 
-        names=c("Female \n D. dorsalis", 
-                "Male \n D.dorsalis", "Female \n D. sub", "Male \n D. sub"),
-        xlab = NULL, 
-        ylab = "Body Mass", 
-        main = "Delomys Body Mass by Species and Sex", 
-        las =2)
-
-```
 
 ### Interpretation
 
@@ -699,11 +204,7 @@ Now we construct the models:
 
 ```{r}
 
-fit1 <- lm(body_length ~ body_mass, data = dat_delomys) ## simple linear regression
-fit2 <- lm(body_mass ~ sex, data = dat_delomys)   ## 1-way ANOVA
-fit3 <- lm(body_mass ~ binomial, data = dat_delomys)  ## 1-way ANOVA
-fit4 <- lm(body_mass ~ sex + binomial, data = dat_delomys) ## 2-way additive ANOVA  
-fit5 <- lm(body_mass ~ sex*binomial, data = dat_delomys) ## 2-way factorial ANOVA
+
 
 ```
 
@@ -716,16 +217,6 @@ Here we use histograms of the residuals as a visual diagnostic:
 
 ```{r echo = FALSE}
 
-hist(residuals(fit1), breaks = 20, 
-     main = "Histogram of Residuals of Fit 1")
-hist(residuals(fit2), breaks = 20, 
-     main = "Histogram of Residuals of Fit 2")
-hist(residuals(fit3), breaks = 20, 
-     main = "Histogram of Residuals of Fit 3")
-hist(residuals(fit4), breaks = 20, 
-     main = "Histogram of Residuals of Fit 4")
-hist(residuals(fit5), breaks = 20, 
-     main = "Histogram of Residuals of Fit 5")
 
 ```
 
@@ -734,12 +225,6 @@ hist(residuals(fit5), breaks = 20,
 Here we use the Shapiro-Wilk test on the residuals of our models as a numerical diagnostic:
 
 ```{r echo = FALSE}
-
-shapiro.test(residuals(fit1))
-shapiro.test(residuals(fit2))
-shapiro.test(residuals(fit3))
-shapiro.test(residuals(fit4))
-shapiro.test(residuals(fit5))
 
 ```
 
@@ -755,19 +240,10 @@ shapiro.test(residuals(fit5))
 ### Body Length
 
 #### Model Coefficient Table: Body Length ~ Body Mass
-```{r, echo=FALSE}
 
-## print model coefficient table
-
-knitr::kable(coef(summary(fit1)))
-
-```
 
 #### Interpretation
 
-- The magnitude of the mass / length relationship is 0.875
-- The expected body length of an animal that weighs 100g would be 163
-- The expected body length of an animal that weight 0 G would be 76
 
 
 
@@ -776,21 +252,10 @@ knitr::kable(coef(summary(fit1)))
 
 #### Model Coefficient Table: Body Mass ~ Sex
 
-```{r, echo=FALSE}
-## print model coefficient table 
-## fit 2 ( mass x sex)
 
-knitr::kable(coef(summary(fit2)))
-```
 
 #### Model Coefficient Table: Body Mass ~ Species
-```{r, echo=FALSE}
-## print model coefficient table
-## fit 3 ( mass x species)
 
-knitr::kable(coef(summary(fit3)))
-
-```
 
 #### Interpretation
 
@@ -805,22 +270,8 @@ knitr::kable(coef(summary(fit3)))
 
 #### ANOVA Table: body_mass ~ sex + binomial
 
-```{r, echo=FALSE}
-## print ANOVA table
-## fit 4 body_mass ~ sex + binomial
 
-knitr::kable(anova(fit4))
 
-```
-
-#### ANOVA Table: body_mass ~ sex * binomial
-```{r, echo=FALSE}
-## print ANOVA table
-## fit 5 body_mass ~ sex * binomial
-
-knitr::kable(anova(fit5))
-
-```
 
 #### Interpretation
 
@@ -835,30 +286,15 @@ knitr::kable(anova(fit5))
 Finally, we will compare our models using Akaike Information Criterion (AIC)
 
 #### AIC: Model 1
-```{r, echo=FALSE}
-## AIC: Model 1
-AIC(fit1)
-```
+
 #### AIC: Model 2
-```{r, echo=FALSE}
-## AIC: Model 2
-AIC(fit2)
-```
+
 #### AIC: Model 3
-```{r, echo=FALSE}
-## AIC: Model 3
-AIC(fit3)
-```
+
 #### AIC: Model 4
-```{r, echo=FALSE}
-## AIC: Model 4
-AIC(fit4)
-```
+
 #### AIC: Model 5
-```{r, echo=FALSE}
-## AIC: Model 5
-AIC(fit5)
-```
+
 
 #### Interpretation
 
