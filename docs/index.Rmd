@@ -35,8 +35,8 @@ options(knitr.duplicate.label = TRUE)
 
 .btn-default {
     color: #2ecc71;
-    background-color: #eb34e8;
-    border-color: #38f2ef;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 </style>
 
@@ -46,12 +46,6 @@ options(knitr.duplicate.label = TRUE)
 
 This page will serve as both a repository for my WebGIS 2021 portfolio, and a space to reflect 
 
-
-Here is a link to another file:
-```{r}
-knitr::include_url("http://www.google.com")
-
-```
 
 
 
@@ -70,6 +64,13 @@ knitr::include_url("http://www.google.com")
 This map is available here: 
 
 https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271
+
+```{r, echo=FALSE}
+knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271")
+```
+
+<iframe src = https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271></iframe>
+
 
 
 
@@ -129,15 +130,21 @@ https://www.openstreetmap.org/user/arelativist
 
 ## `Resume 2021`
 
-The function `subset()` can be used to isolate data from a data frame.
+```{r, echo=FALSE}
+knitr::include_app("MMarasco_Resume2021.html")
+
+```
 
 
-
-Here we have subsetted the penguin data into just one species, Adelie.
 
 ## `link to resume page`
 
 link
+
+## `info`
+
+This HTML Resume was created as a challenge to implement basic HTML skills on a document from scratch.
+
  
 
 
