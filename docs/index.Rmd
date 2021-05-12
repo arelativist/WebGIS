@@ -47,23 +47,12 @@ options(knitr.duplicate.label = TRUE)
 This page will serve as both a repository for my WebGIS 2021 portfolio, and a space to reflect 
 
 
+# Part I: Maps
 
+## Map Production: Michigan Aurora Borealis Photography Sites {.tabset .tabset-pills}
 
-# Map Production: Michigan Aurora Borealis Photography Sites {.tabset .tabset-pills}
+### The Map
 
-<!-- Look at the source code for the final project template, you'll notice the text: -->
-<!-- {.tabset .tabset-pills} -->
-<!-- This creates tabbed content for all the following sections that are one-level below. -->
-<!-- - If you include them on a primary header (one #), all of the subsequent secondary headers will in tabs. -->
-
-
-
-
-## `The Map`
-
-This map is available here: 
-
-https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271
 
 ```{r, echo=FALSE}
 knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271")
@@ -72,63 +61,107 @@ knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/ind
 <iframe src = https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271></iframe>
 
 
+### link to webmap
 
+This map is available here: 
 
-## `input data and methodology`
+https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271
 
-Aurora data from analysis
+### input data and methodology
+
+Aurora data from previous MCDA suitability analysis
   
 
 
 
 
-# Map Production: Numerical Data Exploration  {.tabset .tabset-pills}
+## Map Production: Numerical Data Exploration  {.tabset .tabset-pills}
 
-## Intro
+### Intro
 
 The intention of these to maps was to show how data can be improved upon
 
 
-## Unedited Input
+### Unedited Input
 
 https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
 
 
-## Edited Input
+### Edited Input
 https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
 
-## Second Edit
+### Second Edit
 .......
 
 
-# Michigan Brown Trout: a Tool Analysis {.tabset .tabset-pills}
+## Michigan Brown Trout: a Tool Analysis {.tabset .tabset-pills}
 
 See the final project description for a list of the required functions.
 
-## `map`
+### `map`
 
 https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=56938e49636e4e90b8904a485eed2583
 
 
 
-## `discussion`
+### `discussion`
 
 The purpose of this map was to test different tools of ArcGIS Online.
 
 
-# Map Production: Open Street Map and Humanitarian Open Street Map 
+## Google Map {.tabset .tabset-pills}
 
-## `OSM Profile`
+A Google map made with javascript of a place I like to take day trips to, Saint Joseph, Michigan
 
-Here is my OSM Profile, where you can see some of my contributions:
+### map
 
-https://www.openstreetmap.org/user/arelativist
+### link
+
+### discussion
 
 
+## Map Box {.tabset .tabset-pills}
 
-# HTML Resume {.tabset .tabset-pills}
+### map
 
-## `Resume 2021`
+### link
+
+### discussion
+
+## Bonus Map! Aurora Borealis Revisited {.tabset .tabset-pills}
+
+I remade the Aurora Borealis sites map using MapBox and a heat map symbology. For fun
+
+### `map`
+
+```{r echo = FALSE, out.width= "100%", out.height= '1000 px'}
+knitr::include_url("AuroraRevisited.html")
+```
+
+### `link`
+This map is also available here:
+https://arelativist.github.io/WebGIS/AuroraRevisited.html
+
+
+### `methodology`
+
+## Bonus Map! VGI Food Map
+
+### map
+
+### link
+
+### discussion
+
+
+# Part II: Credentials
+
+A classification of my qualifications and certifications
+
+
+## HTML Resume {.tabset .tabset-pills}
+
+### `Resume 2021`
 
 ```{r, echo=FALSE}
 knitr::include_app("MMarasco_Resume2021.html")
@@ -136,178 +169,53 @@ knitr::include_app("MMarasco_Resume2021.html")
 ```
 
 
+### `link to resume page`
 
-## `link to resume page`
+This HTML Resume is Available here:
+https://arelativist.github.io/WebGIS/MMarasco_Resume2021.html
 
-link
 
-## `info`
+### `info`
 
 This HTML Resume was created as a challenge to implement basic HTML skills on a document from scratch.
 
- 
 
+## Open Street Map and Humanitarian Open Street Map 
 
+### `OSM Profile`
 
+Here is my OSM Profile, where you can see some of my contributions:
 
+https://www.openstreetmap.org/user/arelativist
 
-# Part 2: Data Anaylsis
+## ESRI Trainings
 
-Now that it is imported, we will preform a data analysis on the Delomys data.
+### `link`
 
-## Numerical Exploration
-We will start with a numerical exploration:
+## Datacamp Trainings
 
-### Summary of `dat_delomys`:
+### `link`
 
-### Shapiro Tests
+## Codecademy Trainings
 
+### `link` 
 
-Since both of these return a p-value that is much lower than .05, we know that our variables are not normally distributed.
+## Linkedin Profile
 
+Engaging with the GIS Community
 
-## Graphical Exploration {.tabset .tabset-pills}
+### `link`
 
-### Scatterplot
 
+# Part III: Miscellaneous
 
+## VGI Input Survey
 
-### Histograms
+### concept
 
+### link
 
-## body length histogram
+### results
 
-
-
-
-
-### Boxplots
-
-
-## body mass conditioned on species
-
-
-
-### Interpretation
-
-1. It appears that body mass and length have a linear relationship. It appears visually that the have a positive linear relationship, with several outliers that have much longer body length.
-
-2. The histograms appear to have a somewhat normal distribution. Body mass histogram appears more normal, and body length, again appears to have several outliers positively.
-
-3. Given the low p-values of the shapiro test for both variables, it seems that they are not normally distributed. Visually, body mass appears to be normally distributed. Length only appears somewhat normally distributed visually. Unconditioned, I would say neither is normally distributed.
-
-4. Based on the conditional boxplots, it appears that D.Dorsalis has a greater body mass, and that the males of both species have a greater body mass as well. The difference in mean body mass between the sexes is greateer in D. Dorsalis, but is present in both species.
-
-
-## Model Building 
-
-Now we construct the models:
-
-```{r}
-
-
-
-```
-
-
-## Model Diagnostics {.tabset .tabset-pills}
-
-### Visual Diagnostic
-
-Here we use histograms of the residuals as a visual diagnostic:
-
-```{r echo = FALSE}
-
-
-```
-
-### Numerical Diagnostic
-
-Here we use the Shapiro-Wilk test on the residuals of our models as a numerical diagnostic:
-
-```{r echo = FALSE}
-
-```
-
-### Interpretation
-
-1. Although visually many of the models appear to have a normal distribution, they all return values that demonstrate a violation of the normality assumption under a Shapiro-Wilk normality test.
-
-2. Not all of the models violate the normality assumption with equal severity. While Fit 1, the linear model, appears violate with the most severity, Fit 2, the one way ANOVA based on Sex, appears to have the residuals closest to normality of the models that we have fit.
-
-
-## Model Interpretation {.tabset .tabset-pills}
-
-### Body Length
-
-#### Model Coefficient Table: Body Length ~ Body Mass
-
-
-#### Interpretation
-
-
-
-
-
-### Body Mass: Model Coefficients
-
-#### Model Coefficient Table: Body Mass ~ Sex
-
-
-
-#### Model Coefficient Table: Body Mass ~ Species
-
-
-#### Interpretation
-
-- The base level for sex is female.
-- The base level for binomial is D. Dorsalis
-- Male is heavier, as you can see by the positive coefficient from the base
-- D. Dorsalis is heavier, as you can see by the negative coefficient from the base
-
-
-
-### Body Mass: ANOVA
-
-#### ANOVA Table: body_mass ~ sex + binomial
-
-
-
-
-#### Interpretation
-
-- Sex or species alone are not a significant predictor of body mass.
-- However, there is a significant interaction between the two.
-- The significance differs between the single-predictor, additive, and interactive models. While there appears to be no significance to single-predictor or additive models, the interactive model is significant when both variables are used. While sex or species alone are not significant predictors, taken together as an interaction they are.
-
-
-
-## Model Comparison : Body Mass
-
-Finally, we will compare our models using Akaike Information Criterion (AIC)
-
-#### AIC: Model 1
-
-#### AIC: Model 2
-
-#### AIC: Model 3
-
-#### AIC: Model 4
-
-#### AIC: Model 5
-
-
-#### Interpretation
-
-- Models 2 and 4 have the lowest AIC.
-- Though model 2 has a much lower AIC than model 4, in this case I would select model 4, because in this case I think that the added complexity and reduced ease of understanding would be worth the extra insight gained. Also from our previous inquiry, I know that this model creates more significance, and provides more more insight for only a small gain in complexity. 
-
-
-
-
-
-
-
-
-
+# <font size = "+1"><i> The End! Thank you! <i></font>
 
