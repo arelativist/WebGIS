@@ -40,6 +40,8 @@ Edit this template to fill in your own content.
 
 Type a brief introduction here.
 
+<iframe src='http://shabal.in/visuals/kmeans/3.html' ></iframe>
+
 Here is a link to another file:
 ```{r, echo = FALSE }
 knitr::include_app("StJoeMap.html")
