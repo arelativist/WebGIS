@@ -47,12 +47,6 @@ options(knitr.duplicate.label = TRUE)
 This page will serve as both a repository for my WebGIS 2021 portfolio, and a space to reflect 
 
 
-Here is a link to another file:
-```{r}
-knitr::include_url("http://www.google.com")
-
-```
-
 
 
 # Map Production: Michigan Aurora Borealis Photography Sites {.tabset .tabset-pills}
@@ -70,6 +64,13 @@ knitr::include_url("http://www.google.com")
 This map is available here: 
 
 https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271
+
+```{r, echo=FALSE}
+knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271")
+```
+
+<iframe src = https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271></iframe>
+
 
 
 
