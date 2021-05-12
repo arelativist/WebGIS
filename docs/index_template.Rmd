@@ -41,12 +41,16 @@ Edit this template to fill in your own content.
 Type a brief introduction here.
 
 Here is a link to another file:
-```{r, echo = FALSE}
+```{r, echo = FALSE }
 knitr::include_app("StJoeMap.html")
-knitr::include_url("http://www.google.com")
+knitr::include_url("https://google.com")
 
 ```
 
+```{r, out.extra='style="border: none;"', out.width='56%'}
+
+
+```
 
 
 
