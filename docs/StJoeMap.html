@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>A Nice Day in St. Joe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+	<link
+	href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
+	rel="stylesheet"
+	/>
+	<style>
+	h2,
+h3 {
+margin: 10px;
+font-size: 1.2em;
+text-align: center;
+}
+h3 {
+font-size: 1em;
+}
+p {
+font-size: 1 em;
+margin: 10px;
+text-align: center;
+}
+.map-overlay {
+position: absolute;
+bottom: 0;
+right: 0;
+background: rgba(255, 255, 255, 0.8);
+margin-right: 20px;
+font-family: Arial, sans-serif;
+overflow: auto;
+border-radius: 3px;
+}
+#map {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+}
+#features {
+top: 0;
+left: 0;
+height: 80px;
+margin-top: 20px;
+margin-left: 20px;
+width: 400px;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div id="map"></div>
+	<div class="map-overlay" id="features">
+	<h2>My Favorite Spots in St. Joe</h2>
+	<div id="pd"><p>Click on a point!</p></div>
+	</div>
+
+
+	<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYXJlbGF0aXZpc3QiLCJhIjoiY2tvbG5qOThpMW50ZzJ3cG5sdmNodW1lMyJ9.oe2a08DfUGuGsfM_aW-K_A';
+	var map = new mapboxgl.Map({
+	container: 'map', // container id
+	style: 'mapbox://styles/arelativist/ckolp238g13ji17p750f7azjo', // stylesheet location
+	center: [-86.473711, 42.109787],
+	zoom: 14
+	});
+ 
+	map.on('click', function (e) {
+	var features = map.queryRenderedFeatures(e.point, {
+	layers: ['st-joe-favorite-spots'] // replace this with the name of the layer
+	});
+ 
+	if (!features.length) {
+	return;
+	}
+ 
+	var feature = features[0];
+ 
+	var popup = new mapboxgl.Popup({ offset: [0, -15] })
+	.setLngLat(feature.geometry.coordinates)
+	.setHTML(
+	'<h3>' +
+	feature.properties.title +
+	'</h3><p>' +
+	feature.properties.description +
+	'</p>'
+	)
+	.setLngLat(feature.geometry.coordinates)
+	.addTo(map);
+	});
+</script>
+</body>
+</html>
