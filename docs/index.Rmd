@@ -90,7 +90,7 @@ knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/instant/interacti
 
 The intention of these to maps was to show how data can be improved upon. Here is an example of data edited and symbolized in a meaningful way. </br></br>
 
-Link to WebMap: https://umass-amherst.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=7068fdd9427848d6aba273e1b586e6c4
+<b>Link to WebMap:</b> https://umass-amherst.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=7068fdd9427848d6aba273e1b586e6c4
 
 ### Raw Unedited Input Map
 
@@ -98,7 +98,9 @@ Link to WebMap: https://umass-amherst.maps.arcgis.com/apps/instant/interactivele
 knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7")
 ```
 
-
+Here is the map of the raw point data loaded into ArcGIS unedited and unsymbolized.
+</br></br>
+<b>Link to WebMap: </b> https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
 
 ### Second Round Edit
 .......
@@ -107,7 +109,7 @@ Coming Soon
 
 ## Michigan Brown Trout Distribution: A Tool Analysis {.tabset .tabset-fade}
 
-See the final project description for a list of the required functions.
+An exploration of different tools available within ArcGIS Online and their capabilities
 
 ### The Map
 ```{r echo=FALSE, out.width= "100%"}
@@ -122,14 +124,14 @@ https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=56938e4963
 
 
 
-### Info
+### Input Data and Methodology
 
-The purpose of this map was to test the capabilities of the various tools offered by ArcGIS Online.
+The purpose of this map was to test the capabilities of the various tools offered by ArcGIS Online.USing the input point data of Brown Trout observations in the State of Michigan, several analyses of the points' spatial distribution were conducted over various spatial units.
 
 
 ## Google Map: a Map Production of St. Joseph, MI {.tabset .tabset-fade}
 
-A Google Map made with javascript of a place that is nice to spend the day, Saint Joseph, Michigan
+A Google Map made from scratch with javascript of a place that is nice to spend the day, Saint Joseph, Michigan
 
 
 ### The Map
@@ -147,6 +149,8 @@ Here is my simple Google Map of the best spots in St. Joe
 https://arelativist.github.io/WebGIS/google_html_map.html
 
 ### Discussion
+
+The purpose of this map was to build a simple WebMap in Google Maps with markers in JavaScript from scratch. I found this platform to be quite cumbersome. 
 
 
 ## Map Box: a Map Production of St. Joseph, MI {.tabset .tabset-fade}
@@ -175,7 +179,7 @@ I found the MapBox platform to be much preferable to Google Maps. I really enjoy
 
 I remade the Aurora Borealis sites map using MapBox and a heat map symbology. For fun
 
-### map
+### The Map
 
 ```{r echo = FALSE, out.width= "100%"}
 
@@ -183,20 +187,31 @@ knitr::include_url("AuroraRevisited.html", height = "600px")
 
 ```
 
-### `link`
-This map is also available here:
+### Link
+<b>This map is also available here:</b></br>
 https://arelativist.github.io/WebGIS/AuroraRevisited.html
 
 
-### `methodology`
+### Input Data and Methodology
 
-## Bonus Map! VGI Food Map Geocoding Comparison
+This map was created using the same input point data as the "Michigan Aurora Borealis Photograpy Sites" map that was created in ArcGIS Online. This platform did seem a bit more intuitive than ArcGIS Online, as well.
 
-### map
+## Bonus Map! VGI Food Map Geocoding Comparison {.tabset .tabset-float}
 
-### link
+### The Map
 
-### discussion
+```{r echo = FALSE, out.width = "100%"}
+knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=8435469094754cc282366efbb2bd7246", height = "500 px")
+```
+
+
+### Link to WebMap
+
+<b>Link:</b></br>
+https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=8435469094754cc282366efbb2bd7246
+
+
+### Input Data and Methodology
 
 
 # Part II: Credentials
@@ -206,7 +221,7 @@ A classification of my qualifications and certifications
 
 ## HTML Resume {.tabset }
 
-### `Resume 2021`
+### Resume 2021
 
 ```{r, echo=FALSE, out.width= "100%"}
 knitr::include_app("MMarasco_Resume2021.html")
@@ -214,52 +229,54 @@ knitr::include_app("MMarasco_Resume2021.html")
 ```
 
 
-### `link to resume page`
+### Link To Web Resume
 
-This HTML Resume is Available here:
+<b>This HTML Resume is Available here:</b></br>
 https://arelativist.github.io/WebGIS/MMarasco_Resume2021.html
 
 
-### `info`
+### Info
 
 This HTML Resume was created as a challenge to implement basic HTML skills on a document from scratch.
 
 
 ## Open Street Map and Humanitarian Open Street Map 
 
-### `OSM Profile`
+### OSM Profile
 
-Here is my OSM Profile, where you can see some of my contributions:
-```{r}
-knitr::include_app("https://www.openstreetmap.org/user/arelativist/history#map=3/28.71/5.45")
-```
+Here is a link to my OSM Profile, where you can see some of my contributions:</br>
 
-https://www.openstreetmap.org/user/arelativist
+https://www.openstreetmap.org/user/arelativist </br>
+
 
 ## ESRI Trainings {.tabset .tabset-fade}
-Below is a current transcript of ESRI Trainings I have completed:
+I have completed several training courses online through ESRI, and below is a current transcript of ESRI Training Courses that I have completed:
 
 ### Transcript
 ```{r echo = FALSE, out.width= "100%", out.height= "500 px"}
 knitr::include_graphics("Michelle_Marasco_ESRI.pdf")
 
 ```
+ESRI Courses Transcript
+</br>
+
 ### Link
+<b>Link to PDF of the transcript:</b></br>
+https://arelativist.github.io/WebGIS/Michelle_Marasco_ESRI.pdf
 
-
-## Datacamp Trainings
+## Datacamp Trainings {.tabset .tabset-fade}
+I have also complete several training courses through Datacamp.
 
 ### Profile
-```{r echo= FALSE}
 
-knitr::include_url("https://www.datacamp.com/profile/mmarasco")
-
-```
+My profile including courses that I have completed is available here:</br>
 
 https://www.datacamp.com/profile/mmarasco
 
 
 ## Codecademy Trainings {.tabset .tabset-fade}
+
+I have studied through Codecademy, as well, and below is a link to my profile with information on courses completed. </br>
 
 ### Profile
 My Codecademy Training Profile: </br>
@@ -267,7 +284,7 @@ https://www.codecademy.com/profiles/gigaNinja20552
 
 ## Linkedin Profile {.tabset .tabset-fade}
 
-Engaging with the GIS Community.
+Engaging with the GIS Community. </br>
 
 ### Profile
 
