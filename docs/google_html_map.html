@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Google Map Page</title>
+
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 500px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of stJoe
+  const stJoe = { lat: 42.105, lng: -86.47 };
+    // the location of lighthouse
+  const lighthouse = { lat: 42.116, lng: -86.493 };
+  // the location of nice beach
+  const nicebeach = { lat: 42.102, lng: -86.491 };
+  // the location of cafe
+  const cafe = { lat: 42.109, lng: -86.481147 };
+  //the location of brewery
+  const brewery = { lat: 42.1087, lng: -86.479 };
+  // The map, centered at cafe
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: cafe,
+  });
+
+  
+  //st joe marker
+  const contentString = '<h2> St. Joseph, Michigan </h2>';
+  const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+  });
+  const marker = new google.maps.Marker({
+    position: stJoe,
+    map: map,
+    animation: google.maps.Animation.BOUNCE,
+    title: "St Joseph",
+  });
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
+  });
+   //lighthouse marker
+  const contentString1 = '<h3> Lighthouse </h3>';
+  const infowindow1 = new google.maps.InfoWindow({
+    content: contentString1,
+  });
+  const marker1 = new google.maps.Marker({
+    position: lighthouse,
+    map: map,
+    title: "Lighthouse",
+  });
+  marker1.addListener("click", () => {
+    infowindow1.open(map, marker1);
+  });
+   //beach marker
+  const contentString2 = '<h3> Nice Beach </h3>';
+  const infowindow2 = new google.maps.InfoWindow({
+    content: contentString2,
+  });
+  const marker2 = new google.maps.Marker({
+    position: nicebeach,
+    map: map,
+  });
+  marker2.addListener("click", () => {
+    infowindow2.open(map, marker2);
+  });
+  //cafe marker
+  const contentString3 = '<h3> Nice Cafe </h3>';
+  const infowindow3 = new google.maps.InfoWindow({
+    content: contentString3,
+  });
+  const marker3 = new google.maps.Marker({
+    position: cafe,
+    map: map,
+  });
+  marker3.addListener("click", () => {
+    infowindow3.open(map, marker3);
+  });
+   //brewery marker
+  const contentString4 = '<h3> Brewery </h3>';
+  const infowindow4 = new google.maps.InfoWindow({
+    content: contentString4,
+  });
+  const marker4 = new google.maps.Marker({
+    position: brewery,
+    map: map,
+  });
+  marker4.addListener("click", () => {
+    infowindow4.open(map, marker4);
+  });
+}
+    </script>
+
+  </head>
+  <body>
+    <h3>A Nice Day in St. Joseph Michigan</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbgPSjzauXfAOXw1HOPwwdbEIHvppjbwA&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

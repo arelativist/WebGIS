@@ -44,7 +44,8 @@ options(knitr.duplicate.label = TRUE)
 
 # Introduction
 
-This page will serve as both a repository for my WebGIS 2021 portfolio, and a space to reflect 
+This page will serve as both a repository for my WebGIS 2021 portfolio, and a space to reflect. </br>
+I hope that this compendium serves to demonstrate my fluency in a broad range of platforms. 
 
 
 # Part I: Maps
@@ -87,7 +88,7 @@ The purpose of this map production was to demonstrate the capabilities of ArcGIS
 knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=7068fdd9427848d6aba273e1b586e6c4")
 ```
 
-The intention of these to maps was to show how data can be improved upon. Here is an example of data edited and symbolized in a meaningful way. </br>
+The intention of these to maps was to show how data can be improved upon. Here is an example of data edited and symbolized in a meaningful way. </br></br>
 
 Link to WebMap: https://umass-amherst.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=7068fdd9427848d6aba273e1b586e6c4
 
@@ -108,24 +109,42 @@ Coming Soon
 
 See the final project description for a list of the required functions.
 
-### `map`
+### The Map
+```{r echo=FALSE, out.width= "100%"}
+knitr::include_app("https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=56938e49636e4e90b8904a485eed2583", height = "600 px")
 
+```
+
+
+### Link to WebMap
+<b>Link:</b> </br></br>
 https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=56938e49636e4e90b8904a485eed2583
 
 
 
-### `discussion`
+### Info
 
-The purpose of this map was to test different tools of ArcGIS Online.
+The purpose of this map was to test the capabilities of the various tools offered by ArcGIS Online.
 
 
 ## Google Map: a Map Production of St. Joseph, MI {.tabset .tabset-fade}
 
-A Google map made with javascript of a place that is nice to spend the day, Saint Joseph, Michigan
+A Google Map made with javascript of a place that is nice to spend the day, Saint Joseph, Michigan
+
 
 ### The Map
 
+```{r echo=FALSE, out.width= "100%"}
+knitr::include_url("google_html_map.html", height = "500 px")
+
+```
+Here is my simple Google Map of the best spots in St. Joe
+
 ### Link to WebMap
+
+
+<b>Link:</b></br>
+https://arelativist.github.io/WebGIS/google_html_map.html
 
 ### Discussion
 
@@ -133,11 +152,24 @@ A Google map made with javascript of a place that is nice to spend the day, Sain
 ## Map Box: a Map Production of St. Joseph, MI {.tabset .tabset-fade}
 
 Another take on the map of my favorite spots in Saint Joseph, Michigan, This time utilizing the Map Box platform.
+
 ### The Map
+
+```{r echo = FALSE, out.width = "100%"}
+knitr::include_url("StJoeMap.html", height = "500 px")
+```
+
 
 ### Link to WebMap
 
+<b>Link:</b></br>
+https://arelativist.github.io/WebGIS/StJoeMap.html
+
 ### Discussion
+
+I found the MapBox platform to be much preferable to Google Maps. I really enjoyed the process of working in MapBox comparatively. I find it to be much more intuitive.
+
+
 
 ## Bonus Map! Aurora Borealis Revisited {.tabset .tabset-fade}
 
