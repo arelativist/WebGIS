@@ -49,46 +49,51 @@ This page will serve as both a repository for my WebGIS 2021 portfolio, and a sp
 
 # Part I: Maps
 
-## Map Production: Michigan Aurora Borealis Photography Sites {.tabset .tabset-pills}
+## Map Production: Michigan Aurora Borealis Photography Sites {.tabset .tabset-fade}
 
 ### The Map
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width= "100%"}
 knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271")
 ```
 
-<iframe src = https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271></iframe>
-
-
-### link to webmap
+### Link To WebMap
 
 This map is available here: 
 
 https://umass-amherst.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=a04b9d1082514a709011f703811b7271
 
-### input data and methodology
+### Input Data and Methodology
 
-Aurora data from previous MCDA suitability analysis
-  
+Aurora photography suitability data from previous MCDA suitability analysis.
 
+More information is available here:
+https://umass-amherst.maps.arcgis.com/home/item.html?id=2daa35832a394125937132185e2f5797
 
-
-
-## Map Production: Numerical Data Exploration  {.tabset .tabset-pills}
-
-### Intro
-
-The intention of these to maps was to show how data can be improved upon
+These data points were selected and ranked using several suitability factors, based upon original input point data from The State of Michigan's GIS Open Data Database (https://gis-michigan.opendata.arcgis.com/)
 
 
-### Unedited Input
+
+## Map Production: Morchella Americana Distribution in North America  {.tabset }
+
+The purpose of this map production was to demonstrate the capabilities of ArcGIS Online in displaying spatial  data in interesting and illuminating ways. Edited and symbolized point data is shown in comparison to raw imported point data downloaded from GBIF (https://www.gbif.org/)
+
+### Edited Input Map
+
+```{r, echo=FALSE}
+knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7")
+```
+
+
+The intention of these to maps was to show how data can be improved upon. Here is an example of data edited and symbolized in a meaningful way. 
+
+
+### Raw Unedited Input Map
 
 https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
 
 
-### Edited Input
-https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
 
 ### Second Edit
 .......
@@ -128,14 +133,16 @@ A Google map made with javascript of a place I like to take day trips to, Saint 
 
 ### discussion
 
-## Bonus Map! Aurora Borealis Revisited {.tabset .tabset-pills}
+## Bonus Map! Aurora Borealis Revisited {.tabset }
 
 I remade the Aurora Borealis sites map using MapBox and a heat map symbology. For fun
 
 ### `map`
 
-```{r echo = FALSE, out.width= "100%", out.height= '1000 px'}
+```{r echo = FALSE, out.height = 100}
+
 knitr::include_url("AuroraRevisited.html")
+
 ```
 
 ### `link`
@@ -159,11 +166,11 @@ https://arelativist.github.io/WebGIS/AuroraRevisited.html
 A classification of my qualifications and certifications
 
 
-## HTML Resume {.tabset .tabset-pills}
+## HTML Resume {.tabset }
 
 ### `Resume 2021`
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width= "100%"}
 knitr::include_app("MMarasco_Resume2021.html")
 
 ```
