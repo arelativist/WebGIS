@@ -100,7 +100,7 @@ knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/instant/minimalis
 
 Here is the map of the raw point data loaded into ArcGIS unedited and unsymbolized.
 </br></br>
-<b>Link to WebMap: </b> https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7
+<b>Link to WebMap: </b> https://umass-amherst.maps.arcgis.com/apps/instant/minimalist/index.html?appid=401ac97ebfd44ad097512f11a13ec5f6
 
 ### Second Round Edit
 .......
@@ -197,6 +197,7 @@ https://arelativist.github.io/WebGIS/AuroraRevisited.html
 This map was created using the same input point data as the "Michigan Aurora Borealis Photograpy Sites" map that was created in ArcGIS Online. This platform did seem a bit more intuitive than ArcGIS Online, as well.
 
 ## Bonus Map! VGI Food Map Geocoding Comparison {.tabset .tabset-float}
+Raw Volunteered Geographic Information (VGI) was obtained from a web survey. Geocoding services of two different platforms were tested on the data and these maps show the results.
 
 ### The Map
 
@@ -212,6 +213,9 @@ https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=8435469094
 
 
 ### Input Data and Methodology
+The input data for these two WebMap layers was exactly the same. One map used ArcGIS online geocoding, and the other used the geogcoding service available within Google Earth Pro. The Google Earth Pro geocoded points were then imported into ArcGIS online. It was surprising how effective the Google Earth Pro geocoding tool was, especially considering that I did not know it existed before this exploration. It seemed to be much more effective than the Arc Online geocoding.</br>
+The input data was obtained from an online form and was imported in a comma separated values text format.
+
 
 
 # Part II: Credentials
@@ -300,13 +304,25 @@ http://www.linkedin.com/in/michellemarasco
 
 # Part III: Miscellaneous
 
-## VGI Input Survey
+## VGI Input Survey {.tabset .tabset-float}
+This is a demonstration of a way to collect Volunteered Geographic data. In this case it is a sample survey of collecting location data from a field crew.
 
-### concept
+### Survey
+```{r echo=FALSE}
+knitr::include_url("https://arcg.is/1aqSOr")
 
-### link
+```
 
-### results
+### Concept
+This survey was created as a demonstration of how to use a survey to collect data. The concept of the survey is that field crews could report their location back and that data could be updated in the database.</br>
+<b>Direct Link to the Survey:<b></br>
+https://arcg.is/1aqSOr</br>
 
-# <font size = "+1"><i> The End! Thank you! <i></font>
+### Results
+
+</br>
+No results yet!
+</br>
+
+### <font size = "+1"> The End! Thank you! <i></font>
 
