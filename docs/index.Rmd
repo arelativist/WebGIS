@@ -95,7 +95,7 @@ The intention of these to maps was to show how data can be improved upon. Here i
 ### Raw Unedited Input Map
 
 ``` {r, echo = FALSE, out.width= "100%"}
-knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/View/index.html?appid=dff1ee33634a4518bea1d7b6c131e2b7")
+knitr::include_url("https://umass-amherst.maps.arcgis.com/apps/instant/minimalist/index.html?appid=401ac97ebfd44ad097512f11a13ec5f6")
 ```
 
 Here is the map of the raw point data loaded into ArcGIS unedited and unsymbolized.
