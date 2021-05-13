@@ -23,8 +23,6 @@ options(knitr.duplicate.label = TRUE)
 <!-- Everything above this line is the header. -->
 
 
-<!-- The following text won't be displayed in your document.  It tells R how to make nicer looking buttons for your tabbed content. -->
-
 <style type="text/css" rel="stylesheet">
 
 .btn {
@@ -41,14 +39,17 @@ options(knitr.duplicate.label = TRUE)
 </style>
 
 
+<div style="margin: 50px 0px 50px;">
 
 # Introduction
 
 This page will serve as both a repository for my WebGIS 2021 portfolio, and a space to reflect. </br>
 I hope that this compendium serves to demonstrate my fluency in a broad range of platforms. 
 
+</div>
 
 # Part I: Maps
+</br>
 
 ## Map Production: Michigan Aurora Borealis Photography Sites {.tabset .tabset-fade}
 
@@ -75,8 +76,7 @@ More information is available here:
 https://umass-amherst.maps.arcgis.com/home/item.html?id=2daa35832a394125937132185e2f5797
 
 These data points were selected and ranked using several suitability factors, based upon original input point data from The State of Michigan's GIS Open Data Database (https://gis-michigan.opendata.arcgis.com/)
-
-
+</br></br>
 
 ## Map Production: Morchella Americana Distribution in North America  {.tabset .tabset-fade }
 
@@ -127,6 +127,8 @@ https://umass-amherst.maps.arcgis.com/apps/MapSeries/index.html?appid=56938e4963
 ### Input Data and Methodology
 
 The purpose of this map was to test the capabilities of the various tools offered by ArcGIS Online.USing the input point data of Brown Trout observations in the State of Michigan, several analyses of the points' spatial distribution were conducted over various spatial units.
+
+
 
 
 ## Google Map: a Map Production of St. Joseph, MI {.tabset .tabset-fade}
@@ -218,9 +220,11 @@ The input data was obtained from an online form and was imported in a comma sepa
 
 
 
+
 # Part II: Credentials
 
 A classification of my qualifications and certifications
+
 
 
 ## HTML Resume {.tabset }
@@ -251,7 +255,8 @@ This HTML Resume was created as a challenge to implement basic HTML skills on a 
 Here is a link to my OSM Profile, where you can see some of my contributions:</br>
 
 https://www.openstreetmap.org/user/arelativist </br>
-
+</br>
+</br>
 
 ## ESRI Trainings {.tabset .tabset-fade}
 I have completed several training courses online through ESRI, and below is a current transcript of ESRI Training Courses that I have completed:
@@ -262,11 +267,12 @@ knitr::include_graphics("Michelle_Marasco_ESRI.pdf")
 
 ```
 ESRI Courses Transcript
-</br>
+
 
 ### Link
 <b>Link to PDF of the transcript:</b></br>
 https://arelativist.github.io/WebGIS/Michelle_Marasco_ESRI.pdf
+</br></br>
 
 ## Datacamp Trainings {.tabset .tabset-fade}
 I have also complete several training courses through Datacamp.
@@ -276,7 +282,7 @@ I have also complete several training courses through Datacamp.
 My profile including courses that I have completed is available here:</br>
 
 https://www.datacamp.com/profile/mmarasco
-
+</br></br>
 
 ## Codecademy Trainings {.tabset .tabset-fade}
 
@@ -285,6 +291,7 @@ I have studied through Codecademy, as well, and below is a link to my profile wi
 ### Profile
 My Codecademy Training Profile: </br>
 https://www.codecademy.com/profiles/gigaNinja20552
+</br></br>
 
 ## Linkedin Profile {.tabset .tabset-fade}
 
@@ -301,6 +308,7 @@ My LinkedIn Profile
 
 The link to my Public Profile Page:</br>
 http://www.linkedin.com/in/michellemarasco
+
 
 # Part III: Miscellaneous
 
@@ -324,5 +332,5 @@ https://arcg.is/1aqSOr</br>
 No results yet!
 </br>
 
-## <font size = "+3"> <i>The End! Thank you! <i></font>
+## <font size = "+2"> <i>The End! Thank you! <i></font>
 
